@@ -1,0 +1,90 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255,255,255,.96);
+  border-bottom: 1px solid #e5e7eb;
+  backdrop-filter: blur(12px);
+}
+
+.nav-inner {
+  max-width: 1200px;
+  margin: auto;
+  min-height: 72px;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 22px;
+  font-weight: 800;
+  color: #111827;
+  white-space: nowrap;
+}
+
+.brand span:last-child span {
+  color: #4f46e5;
+}
+
+.brand-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: #eef2ff;
+}
+
+.nav-links {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.nav-link {
+  padding: 9px 11px;
+  border-radius: 9px;
+  color: #64748b;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: #4f46e5;
+  background: #eef2ff;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.login-link {
+  font-weight: 700;
+  color: #475569;
+}
+
+.register-btn, .primary-btn {
+  border: 0;
+  color: white;
+  background: #4f46e5;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.register-btn:hover, .primary-btn:hover {
+  background: #4338ca;
+}
+
+@media (max-width: 900px) {
+  .nav-inner { flex-wrap: wrap; padding: 12px 18px; }
+  .nav-links { order: 3; flex-basis: 100%; overflow-x: auto; justify-content: flex-start; padding-bottom: 4px; }
+}

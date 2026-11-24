@@ -1,0 +1,87 @@
+.item-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(15,23,42,.06);
+  transition: .2s ease;
+}
+
+.item-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 35px rgba(15,23,42,.11);
+}
+
+.item-image {
+  height: 205px;
+  position: relative;
+  background: #e2e8f0;
+}
+
+.item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lost-badge, .found-badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  color: white;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.lost-badge { background: #dc2626; }
+.found-badge { background: #059669; }
+
+.item-content {
+  padding: 19px;
+}
+
+.item-category {
+  color: #4f46e5;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+
+.item-content h3 {
+  margin: 7px 0;
+  font-size: 19px;
+}
+
+.item-description {
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.55;
+  min-height: 44px;
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  color: #64748b;
+  font-size: 13px;
+  margin: 14px 0;
+}
+
+.view-btn {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  background: #eef2ff;
+  color: #4338ca;
+  font-weight: 800;
+}
+
+.view-btn:hover {
+  background: #e0e7ff;
+}

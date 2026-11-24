@@ -1,0 +1,73 @@
+.form-page {
+  max-width: 850px;
+  margin: auto;
+  padding: 65px 24px 80px;
+}
+
+.form-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 22px;
+  padding: 35px;
+  box-shadow: 0 15px 40px rgba(15,23,42,.06);
+}
+
+.form-card h1 {
+  font-size: 38px;
+  margin: 10px 0;
+}
+
+.form-intro {
+  color: #64748b;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.form-card form {
+  display: grid;
+  gap: 18px;
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.form-card label {
+  display: grid;
+  gap: 8px;
+  color: #334155;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.form-card input, .form-card textarea, .form-card select {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 12px;
+  outline: none;
+  background: white;
+}
+
+.form-card input:focus, .form-card textarea:focus, .form-card select:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px #eef2ff;
+}
+
+.success-box {
+  text-align: center;
+  padding: 40px 10px;
+}
+
+.success-box > div { font-size: 50px; margin-bottom: 12px; }
+.success-box h2 { margin-bottom: 8px; }
+.success-box p { color: #64748b; margin-bottom: 22px; }
+
+@media (max-width: 650px) {
+  .two-col { grid-template-columns: 1fr; }
+  .form-page { padding: 40px 18px; }
+  .form-card { padding: 24px; }
+}
+.form-secondary { margin-left: 10px; background: white; color: #4338ca; border: 1px solid #c7d2fe; }

@@ -1,0 +1,39 @@
+.listing-page {
+  max-width: 1200px;
+  margin: auto;
+  padding: 65px 24px 80px;
+}
+
+.page-head h1 {
+  font-size: 44px;
+  margin: 10px 0;
+}
+
+.page-head > p:last-child {
+  color: #64748b;
+  font-size: 17px;
+}
+
+.listing-search {
+  width: 100%;
+  margin: 30px 0;
+  padding: 15px 17px;
+  border: 1px solid #dbe3ef;
+  border-radius: 12px;
+  outline: none;
+  background: white;
+}
+
+.listing-page .items-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+@media (max-width: 900px) {
+  .listing-page .items-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .listing-page { padding-left: 18px; padding-right: 18px; }
+  .listing-page .items-grid { grid-template-columns: 1fr; }
+}
